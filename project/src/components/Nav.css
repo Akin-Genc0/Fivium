@@ -4,12 +4,20 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
-
+.nav-con{
+   
+    margin: 0vw 0vw;
+    padding: 1.1vw 5vw;
+    padding-bottom: 0.5vw;
+    margin-bottom: 2vw;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
 nav{
     display: flex;
-    margin: 0 5rem;
+ 
     
     align-items: center;
 }
@@ -23,12 +31,17 @@ nav{
     
 }
 
+ul{
+    margin: 0;
+}
 
 h1 {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    letter-spacing: 0.35rem;
+    font-weight: 100;
+    letter-spacing: 0.45rem;
     color: #626262;
+    font-size: 2.2vw;
+    margin: 0;
 }
 
 a {
@@ -36,8 +49,9 @@ a {
     transition: color 0.3s; 
     border-radius: 1rem;
     color: #737373;
-    font-size: 0.88rem;
-    letter-spacing: 0.01rem;
+    font-size: 0.88vw;
+    letter-spacing: 0rem;
+    
 }
 
 
@@ -53,10 +67,10 @@ ul {
     
     list-style: none;
    display: flex;
-   gap:38px;
+   gap:2vw;
    
    padding: 0;
-   margin-right: 40px;
+   margin-right: 2.5vw;
 }
 
 
@@ -64,23 +78,23 @@ ul {
 
 
 img {
-    width: 50px;
-    height: 50px;
+    width: 3.3vw;
+    height: 3.3vw;
     
 }
 
 
 button {
 
-padding: 1.7vh 5vh;
+padding: 0.7vw 2.8vw;
 border-radius: 2rem;
-font-weight: 550;
+letter-spacing: 0.01rem;
 color: #75ADF5;
 cursor: pointer;
-border: 2px solid #A1C7F8; 
+border: 0.15vw solid #A1C7F8; 
 background-color: white;
 transition: background-color 0.3s; 
-font-size: 1.9vh;
+font-size: 0.88vw;
 
 }
 
@@ -90,43 +104,54 @@ button:hover {
 
     background-color:  #006eff;
     color: white;
-    border: 2px solid #006eff; 
+    border: 0.15vw solid #006eff; 
    
    
 }
 
-@media (max-width: 950px) {
+
+
+
+@media (max-width: 700px) {
     
 .lists{
     display: none;
 }
 
-nav{
-    margin: 0 1rem;
-    padding: 0;
+.nav-con{
+    margin-top: 2vw;
+    padding-bottom: 3vw;
+    
 }
 
+
+
+
 h1 {
-    font-size: 18px;
+ 
+    font-size: 1.5rem;
    
 }
 img {
-    width: 35px;
-    height: 35px;
+   width: 38px;
+   height: 38px;
+    
 }
 
 button {
 
   
-    padding: 0.45rem 1.5rem;
-    font-size: 0.85rem;
-  
-    
+    padding: 2.2vw 8vw;
+    border-radius: 0.8rem;
+    font-size: 2vw;
+    border: 1.1px solid ;
     }
 
 
 
 }
 
+
+ 
 
 
