@@ -2,6 +2,9 @@ import Nav from '../components/Nav';
 import Hero from '../components/Hero';
 import Mid from '../components/mid';
 import Cards from '../components/cards';
+import Map from '../components/map';
+
+
 
 function Careers() {
     return (
@@ -10,6 +13,7 @@ function Careers() {
          <Hero/>
          <Mid/>
          <Cards/>
+         <Map/>
      
       </div>
     );
