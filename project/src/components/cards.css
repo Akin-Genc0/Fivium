@@ -88,6 +88,17 @@
         border: 2px #75ADF5;;
        
     }
+
+    .second-instance .cards-container h1 {
+        font-size: 1.5vw;
+        color: #333; 
+    }
+    
+    .second-instance .cards-container p {
+        font-size: 0.95vw; 
+       
+        color: #666; 
+    }
     
     /* Media query for responsiveness on smaller screens */
     @media (max-width: 768px) {
@@ -133,4 +144,22 @@
             font-size: 5vw;
         
         }
+
+        .second-instance .cards-container h1 {
+            font-size: 5vw;
+            
+        }
+        
+        .second-instance .cards-container p {
+            font-size: 2.5vw; 
+        }
+
+
+
+
     }
+
+
+
+
+

@@ -1,54 +1,58 @@
+import PropTypes from 'prop-types'; 
 import './cards.css';
 
-function Cards() {
-
+function Cards({ title1, description1, title2, description2, title3, description3, title4, description4, showButtons, titleTextSize, containerClass }) {
     return (
-        <>
-   
-  
-
-        <div className="careers-section">
+        <div className={`careers-section ${containerClass}`}>
             <section className="header">
-                <h1>Careers at Fivium</h1>
-                <p>Build modern web apps for high-profile government clients in the heart of London</p>
+                <h1>{title1}</h1>
+                <p>{description1}</p>
             </section>
 
             <section className="cards-container">
                 <div className="card1">
-                    <h1>Working at Fivium</h1>
-                    <p>
-                    To create an environment where individuals can be the best personal and professional 
-                    versions of themselves requires investment and belief from leaders. 
-                    </p>
-                    <button className="learn-more">Learn More</button>
+                    <h1 className={titleTextSize}>{title2}</h1>
+                    <p>{description2}</p>
+                    {showButtons && <button className="learn-more">Learn More</button>}
                 </div>
 
                 <article className="card2">
-                    <h1>Our culture</h1>
-                    <p>
-                        Our collective efforts to create an amazing place 
-                        to work have been externally recognised by Investors 
-                        in People who have awarded Fivium their Gold Standard.
-                    </p>
-                    <button className="learn-more">Learn More</button>
+                    <h1 className={titleTextSize}>{title3}</h1>
+                    <p>{description3}</p>
+                    {showButtons && <button className="learn-more">Learn More</button>}
                 </article>
 
                 <article className="card3">
-                    <h1>Work with us</h1>
-                    <p>
-                        If youre an IT expert or want to become one and 
-                        if you want to develop applications that will make 
-                        the world a better, safer and fairer place, work with us. 
-                        It all comes back to team.
-                    </p>
-                    <button className="learn-more">Learn More</button>
+                    <h1 className={titleTextSize}>{title4}</h1>
+                    <p>{description4}</p>
+                    {showButtons && <button className="learn-more">Learn More</button>}
                 </article>
             </section>
         </div>
-         
- 
-        </>
     );
 }
 
+// Define the PropTypes for the Cards component
+Cards.propTypes = {
+    title1: PropTypes.string.isRequired,
+    description1: PropTypes.string.isRequired,
+    title2: PropTypes.string.isRequired,
+    description2: PropTypes.string.isRequired,
+    title3: PropTypes.string.isRequired,
+    description3: PropTypes.string.isRequired,
+    title4: PropTypes.string.isRequired,
+    description4: PropTypes.string.isRequired,
+    showButtons: PropTypes.bool,
+    titleTextSize: PropTypes.string,
+    containerClass: PropTypes.string, 
+};
+
+// Set default values for props
+Cards.defaultProps = {
+    showButtons: true,
+    titleTextSize: '',
+    containerClass: '', 
+};
+
 export default Cards;
+
