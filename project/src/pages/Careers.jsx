@@ -4,6 +4,8 @@ import Mid from '../components/mid';
 import Cards from '../components/cards';
 import Map from '../components/map';
 import Lower from '../components/lower';
+import Join from '../components/join';
+
 
 function Careers() {
   return (
@@ -37,7 +39,9 @@ function Careers() {
         titleTextSize="small-title" // Pass a class for smaller title text size
         containerClass="second-instance" // Pass a custom class for second instance
        />
+        <Join/>
     </div>
+   
   );
 }
 

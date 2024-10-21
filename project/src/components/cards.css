@@ -19,12 +19,18 @@
         box-sizing: border-box;
         padding: 2rem; 
         max-width: 30vw; 
-        border-radius: 1.8rem;
+        border-radius: 1.5rem;
         margin-top: 2rem; 
         height: 21.5vw;
         justify-content: center; 
-        
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for lift effect */
     }
+    
+    .card1:hover, .card2:hover, .card3:hover {
+        transform: translateY(-10px); /* Move the card up by 10px */
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    }
+    
     
     .card1 p, .card2 p, .card3 p {
         font-size: 1vw; 
@@ -52,6 +58,7 @@
     
      
     .card1 {
+        
         background-color: #E5EFFD;
     }
     
@@ -99,6 +106,10 @@
        
         color: #666; 
     }
+    
+
+
+
     
     /* Media query for responsiveness on smaller screens */
     @media (max-width: 768px) {
