@@ -1,0 +1,98 @@
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: #333;
+    padding: 1vw 5vw;
+    border-top: 1px solid #ccc;
+}
+
+.footer-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-container ul li {
+    margin-bottom: 10px;
+}
+
+.footer-container ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-container ul li a:hover {
+    text-decoration: underline;
+}
+
+.section1, .section2, .section3 {
+    flex: 1;
+    margin: 0 15px;
+    flex-direction: column;
+    padding-top: 4vw;
+ 
+}
+
+
+.section4{
+    flex: 1;
+    margin: 0 15px;
+    flex-direction: column;
+}
+.section4 {
+    text-align: right;
+  
+}
+
+.footer-list1 , .footer-list2, .footer-list3 , .footer-list4 {
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+}
+
+.footer-list4 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.footer-img {
+    width: 15vw;
+    height: auto;
+    margin-right: 20px; 
+    margin-bottom: 1rem;
+}
+
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: flex-start; /* Align items to start */
+    }
+
+    .section1, .section2, .section3, .section4 {
+        margin: 10px 0; /* Add some vertical spacing between sections */
+        width: 100%; /* Full width for each section */
+    }
+
+    .footer-list1, .footer-list2, .footer-list3, .footer-list4 {
+        line-height: 1; /* Increase line height for readability */
+    }
+
+    /* Adjust font sizes for better readability on mobile */
+    .footer-container ul li {
+        font-size: 0.7rem; /* Increase font size for list items */
+    }
+
+    .footer-container ul li a {
+        font-size: 0.7rem; /* Increase font size for links */
+    }
+
+    .footer-img {
+        width: 30vw; /* Adjust image size for smaller screens */
+        margin-right: 0; /* Remove margin for a better layout */
+        margin-bottom: 1rem;
+    }
+}
+
+

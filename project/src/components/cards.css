@@ -4,171 +4,139 @@
     align-items: center;
     text-align: center;
     margin-bottom: 1vw;
-    
-    }
-    
-    .cards-container {
-        display: flex;
-        flex-wrap: wrap; 
-        gap: 25px; 
-        justify-content: center; 
-        margin: 0 2vw;
-    }
-    
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 25px; 
+    justify-content: center; 
+    margin: 0 2vw;
+}
+
+.card1, .card2, .card3 {
+    box-sizing: border-box;
+    padding: 2rem; 
+    max-width: 30vw; 
+    border-radius: 1.5rem;
+    margin-top: 2rem; 
+    justify-content: center; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for lift effect */
+}
+
+.card1:hover, .card2:hover, .card3:hover {
+    transform: translateY(-10px); /* Move the card up by 10px */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+}
+
+.card1 p, .card2 p, .card3 p {
+    font-size: 1vw; 
+    max-width: 100%; 
+    line-height: 1.8vw; 
+}
+
+.card1 h1, .card2 h1, .card3 h1 {
+    font-weight: 400;
+    color: #191919;
+    letter-spacing: 0;
+    font-size: 2.2vw;
+}
+
+.header h1 {
+    font-weight: 500;
+    color: #1D1D1D;
+    font-size: 2.5vw; 
+    letter-spacing: 0;
+}
+
+.card1 {
+    background-color: #E5EFFD;
+}
+
+.card2 {
+    background-color: #F4F9FF;
+}
+
+.card3 {
+    background-color: #F2FAFF;
+}
+
+.cards-container button {
+    color: #191919;
+    border-color: #1D1D1D;
+    background-color: transparent; 
+}
+
+.learn-more {
+    display: inline-block; 
+    padding: 0.75vw 1.7vw;
+    border-radius: 2vw;
+    border: 1px solid #191919;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.learn-more:hover {
+    background-color: #75ADF5; 
+    color: white;
+    border: 2px solid #75ADF5; 
+}
+
+.second-instance .cards-container h1 {
+    font-size: 1.5vw;
+    color: #333; 
+}
+
+.second-instance .cards-container p {
+    font-size: 0.95vw; 
+    color: #666; 
+}
+
+/* Media query for responsiveness on smaller screens */
+@media (max-width: 768px) {
     .card1, .card2, .card3 {
-        box-sizing: border-box;
-        padding: 2rem; 
-        max-width: 30vw; 
-        border-radius: 1.5rem;
-        margin-top: 2rem; 
-        height: 21.5vw;
-        justify-content: center; 
-        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for lift effect */
+        flex: 1 1 calc(100% - 10px); /* Allow cards to fill available space */
+        max-width: calc(100% - 10px); /* Take full width minus margins */
+        margin: 1vw 0; /* Space between cards */
+        padding: 4vw; /* Adjust padding for smaller screens */
     }
-    
-    .card1:hover, .card2:hover, .card3:hover {
-        transform: translateY(-10px); /* Move the card up by 10px */
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
-    }
-    
-    
+
     .card1 p, .card2 p, .card3 p {
-        font-size: 1vw; 
-        max-width: 100%; 
-        line-height: 1.8vw; 
-    
+        flex: 1 1 100%; 
+        max-width: 100%;
+        font-size: 2.5vw;
+        width: 90%; /* Adjust for better fit */
+        line-height: 4vw;
     }
-    
-    .card1 h1, .card2 h1, .card3 h1 {
-        font-weight: 400;
-        color: #191919;
-        letter-spacing: 0;
-        font-size: 2.2vw;
-    
-    }
-    
-    
-    
+
     .header h1 {
-        font-weight: 500;
-        color: #1D1D1D;
-        font-size: 2.5vw; 
-        letter-spacing: 0;
+        font-size: 6vw; 
     }
-    
-     
-    .card1 {
-        
-        background-color: #E5EFFD;
+
+    .header {
+        margin-bottom: 5vw; 
     }
-    
-    .card2 {
-        background-color: #F4F9FF;
-    }
-    
-    .card3 {
-        background-color: #F2FAFF;
-    }
-    
-     
-    .cards-container button {
-        color: #191919;
-        border-color: #1D1D1D;
-        background-color: transparent; / 
-    }
-    
-     
+
     .learn-more {
-        display: inline-block; 
-        padding: 0.75vw 1.7vw;
-        border-radius: 2vw;
-        border: 1px solid #191919;
-        cursor: pointer;
-        text-align: center;
-        margin-top: 10px;
-        transition: all 0.3s ease;
+        padding: 1.5vw 4vw;
+        border-radius: 2.7vw; 
     }
-    
-    .learn-more:hover {
-        background-color: #75ADF5;; 
-        color: white;
-        border: 2px #75ADF5;;
-       
+
+    .card1 h1, .card2 h1, .card3 h1 {
+        font-size: 5vw;
     }
 
     .second-instance .cards-container h1 {
-        font-size: 1.5vw;
-        color: #333; 
+        font-size: 5vw;
     }
-    
+
     .second-instance .cards-container p {
-        font-size: 0.95vw; 
-       
-        color: #666; 
+        font-size: 2.5vw; 
     }
-    
+}
 
-
-
-    
-    /* Media query for responsiveness on smaller screens */
-    @media (max-width: 768px) {
-        .card1, .card2, .card3 {
-            flex: 1 1 90%;
-            max-width: 100%;
-            margin: 1vw 5vw;
-            height: 50vw;
-            padding: 6vw 6vw;
-            
-        }
-        
-    
-        .card1 p, .card2 p, .card3 p {
-            flex: 1 1 100%; 
-            max-width: 100%;
-            font-size: 2.5vw;
-            width: 70vw;
-            line-height: 4vw;
-           
-        }
-    
-    
-    
-        .header h1 {
-            font-size: 6vw; 
-        }
-
-        .header  {
-            margin-bottom: 5vw; 
-        }
-    
-    
-    
-        .learn-more {
-            padding: 1.5vw 4vw;
-            border-radius: 2.7vw; 
-        }
-    
-    
-        .card1 h1, .card2 h1, .card3 h1 {
-         
-            font-size: 5vw;
-        
-        }
-
-        .second-instance .cards-container h1 {
-            font-size: 5vw;
-            
-        }
-        
-        .second-instance .cards-container p {
-            font-size: 2.5vw; 
-        }
-
-
-
-
-    }
 
 
 

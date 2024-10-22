@@ -1,72 +1,78 @@
 .sub-con {
     margin: 10vw 0vw;
     display: flex;
-    justify-content: center;
+    justify-content: center;    
 }
 
-.sub-texts  {
+.sub-texts {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 60%;
 }
 
-.sub-texts p{
+.sub-texts p {
     width: 90%;
     line-height: normal;
 }
 
-.sub-texts h3{
+.sub-texts h3 {
     font-size: 2.3vw;
     font-weight: 400;
     margin: 0;
-    margin-bottom: 1vw;
-    
+    margin-bottom: 1vw;    
 }
+
 .sub-btn {
-    align-self: end;
+    align-self: end; 
     margin-bottom: 2vw;
     padding: 1vw 2.8vw;
     color: #3D403F;
-    font-size: 1.02vw;
+    font-size: 1.02vw; 
     border: 1.5px solid #332E30;
-
+    transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
 .sub-btn-mobile {
     display: none; 
 }
 
+/* Media query for responsiveness on smaller screens */
 @media (max-width: 768px) {
 
     .sub-con {
        text-align: center;
-        
+       margin-bottom: 20vw;        
     }
 
     .sub-btn {
-       display: none;
-    
+       display: none; /* Hide desktop button on small screens */
     }
 
-    .sub-texts h3{
-        font-size: 5vw;
- 
+    .sub-texts h3 {
+        font-size: 5vw; /* Increase font size for headings on mobile */
     }
 
-    .sub-texts p{
-       
-        align-self: center;
-        
+    .sub-texts p {
+        align-self: center; /* Center align paragraphs for better layout */
+        font-size: 2vw; /* Increase font size for better readability */
+        width: 90%; /* Maintain width for smaller screens */
     }
+
     .sub-btn-mobile {
         display: inline-block; /* Show only on small screens */
         align-self: center;
         margin-top: 3vw;
-        padding: 2.5vw 22vw;
+        padding: 2.5vw 10vw; /* Adjust padding for a balanced look */
         color: #3D403F;
-        font-size: 3vw;
+        font-size: 3vw; /* Increase font size for better touch targets */
         border: 1.5px solid #332E30;
         border-radius: 5vw;
+        transition: background-color 0.3s ease, color 0.3s ease; /* Add transition for effects */
+    }
+
+    .sub-btn-mobile:hover {
+        background-color: #332E30; /* Optional: Change background color on hover */
+        color: white; /* Optional: Change text color on hover */
     }
 }

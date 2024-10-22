@@ -5,7 +5,7 @@ import Cards from '../components/cards';
 import Map from '../components/map';
 import Lower from '../components/lower';
 import Join from '../components/join';
-
+import Footer from '../components/footer';
 
 function Careers() {
   return (
@@ -40,6 +40,7 @@ function Careers() {
         containerClass="second-instance" // Pass a custom class for second instance
        />
         <Join/>
+        <Footer/>
     </div>
    
   );
