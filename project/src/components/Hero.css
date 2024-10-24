@@ -129,8 +129,9 @@ p {
 
     .hero-img {
        width: 70vw;
-       margin-left: 35vw;
+       margin-left: 7vw;
        height: 45vw;
+       
     }
 
     p {
@@ -171,3 +172,5 @@ p {
 
 
     }
+
+   

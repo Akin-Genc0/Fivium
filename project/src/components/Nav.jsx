@@ -1,5 +1,6 @@
 import './Nav.css';
 import logo from '../assets/icon1.png'
+import { Link } from 'react-router-dom';
 
 function Nav() {
 
@@ -11,8 +12,10 @@ function Nav() {
 
             <nav>
                 <div className='left'>
-            <img src={logo}/>
-            <h1>Fivium</h1>
+                <Link to="/" className="header-link"> 
+                    <img src={logo} alt="Fivium Logo" />
+                    <h1>Fivium</h1>
+                    </Link>
             </div>
             <ul className='lists'>
             <li><a href="#">Careers</a></li>
@@ -22,7 +25,9 @@ function Nav() {
             
             </ul>
 
-            <button className='nav-button'>Apply CV</button>
+            <Link to="/Vacation">
+        <button className='nav-button'>Apply Now</button>
+      </Link>
 
             </nav>
             </div>

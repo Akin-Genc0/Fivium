@@ -6,13 +6,31 @@ import Map from '../components/map';
 import Lower from '../components/lower';
 import Join from '../components/join';
 import Footer from '../components/footer';
+import hero from '../assets/hero2.png';
+import img1 from '../assets/hero5.png';
+import img2 from '../assets/img2.jpg';
 
 function Careers() {
   return (
     <div>
        <Nav/>
-       <Hero/>
-       <Mid/>
+       <Hero 
+                heading1="Careers"
+                heading2=" Careers at Fivium It all comes back to team"
+                paragraph1="From a small team of enterprising graduates who recognised and believed in the benefits of working with users from the outset in an agile and collaborative way, to a vibrant, successful and progressive team whose principles continue to guide our thriving business."
+                paragraph2="The strength of our team lies in the powerful combination of expertise, integrity and authenticity. Our steady growth over the last two decades has meant the solid foundations on which it was built remain true and present today, with an exciting future landscape to explore and develop."
+                imageSrc={hero}
+            />
+       <Mid 
+                title1="Fundamental to our enduring spirit"
+                text1="The continuous involvement of our founding Directors, who encourage an open dialogue across the team and support a constructive feedback loop. We believe the respect this creates is highly valued and acknowledged as critical to the success of the business. People drive this business, not profit."
+                imgSrc1={img1}
+                title2="It all comes back to team"
+                text2="The strength of our team lies in the powerful combination of expertise, integrity, and authenticity. Our steady growth over the last two decades has meant the solid foundations on which it was built remain true and present today, with an exciting future landscape to explore and develop."
+                imgSrc2={img2}
+            />
+
+            
        <Cards 
           title1="Careers at Fivium" 
           description1="Build modern web apps for high-profile government clients in the heart of London" 
